@@ -1,0 +1,41 @@
+#change Domain & use
+
+git_fb = session.get("https://www.instagram.com/").text
+_data = {'__d': 'www',
+            '__user': '0',
+            '__a': '1',
+            '__req': random.choice(['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '1', '2', '3', '4', '5', '6', '7', '8', '9', '9', '0']),
+            '__hs': re.search(r'"haste_session":"([^"]*)"', str(git_fb)).group(1),
+            'dpr': '2',
+            '__ccg': 'MODERATE',
+            '__rev': re.search(r'"server_revision":(\d+)', str(git_fb)).group(1),
+            '__s': str(random_part[:6] + ':' + random_part[6:12] + ':' + random_part[12:]),
+            '__hsi': re.search(r'"hsi":"([^"]*)"', str(git_fb)).group(1),
+            '__dyn': '',
+            '__csr': '',
+            '__comet_req': '7',
+            'lsd': re.search(r'"lsd":"([^"]*)"', str(git_fb)).group(1),
+            'jazoest': re.search(r'jazoest=(\d+)', str(git_fb)).group(1),
+            '__spin_r': re.search(r'"__spin_r":(\d+)', str(git_fb)).group(1),
+            '__spin_b': re.search(r'"__spin_b":"([^"]*)"', str(git_fb)).group(1),
+            '__spin_t': re.search(r'"__spin_t":(\d+)', str(git_fb)).group(1),
+            'params': '{"params":"{\"server_params\":{\"credential_type\":\"password\",\"username_text_input_id\":\"h74t3k:72\",\"password_text_input_id\":\"h74t3k:73\",\"login_source\":\"Login\",\"login_credential_type\":\"none\",\"server_login_source\":\"login\",\"ar_event_source\":\"login_home_page\",\"should_trigger_override_login_success_action\":0,\"should_trigger_override_login_2fa_action\":0,\"is_caa_perf_enabled\":1,\"reg_flow_source\":\"aymh_single_profile_native_integration_point\",\"caller\":\"gslr\",\"ar_context\":\"AR0cj-0ZAEPPG9iKjnWajNmlOdYIDXShnXTWccT6g3lPlVBTbAip5HIiAKW_NjKhuf0RMRB2OCR3s3sphH-fFMhKt8F9X6UuLAcIkn_KFSXc8VuDd2ypTdgwzoPTgBFQYXeCFZn1ko3hE07F9maXrQ6JYrtPtAAIQ1xTCxNhDgBXkMenyAhhxyg-vockXwVRNAnErMNhlRTLlZthz8JazCu5eCc4no3PqMUWehKPVIrHr2_eFxVKERr16voah8v9ppMOrnwo0FtEekLGAb_WVqWR4jvls6DJSXVR_3udCmvL-DR1hP0yU3xFWHOlJJFCDlpH0io-dx_ar0sI9uRxPUkg_zALqCa1cOKyJQDds7vvxF20XmX751WKkPS5v14icdl-D2sm|arm\",\"is_from_landing_page\":0,\"is_from_empty_password\":0,\"is_from_password_entry_page\":0,\"is_from_assistive_id\":0,\"is_from_msplit_fallback\":0,\"INTERNAL__latency_qpl_marker_id\":36707139,\"INTERNAL__latency_qpl_instance_id\":\"103990664000406\",\"device_id\":\"Zz9NEwABAAHFTcaHGGpblh4qFplb\",\"family_device_id\":null,\"waterfall_id\":\"9f9d89bf-e8a0-4118-9b38-0df5a9996ba7\",\"offline_experiment_group\":null,\"layered_homepage_experiment_group\":null,\"is_platform_login\":0,\"is_from_logged_in_switcher\":0,\"is_from_logged_out\":0,\"access_flow_version\":\"F2_FLOW\",\"INTERNAL_INFRA_THEME\":\"default\"},\"client_input_params\":{\"machine_id\":\"\",\"contact_point\":\"'+uid+'\",\"password\":\"#PWD_BROWSER:5:'+time+':'+pww+'\",\"accounts_list\":[],\"fb_ig_device_id\":[],\"secure_family_device_id\":\"\",\"encrypted_msisdn\":\"\",\"headers_infra_flow_id\":\"\",\"try_num\":1,\"login_attempt_count\":1,\"event_flow\":\"login_manual\",\"event_step\":\"home_page\",\"openid_tokens\":{},\"auth_secure_device_id\":\"\",\"client_known_key_hash\":\"\",\"has_whatsapp_installed\":0,\"sso_token_map_json_string\":\"\",\"should_show_nested_nta_from_aymh\":1,\"password_contains_non_ascii\":\"false\",\"has_granted_read_contacts_permissions\":0,\"has_granted_read_phone_permissions\":0,\"app_manager_id\":\"\",\"lois_settings\":{\"lois_token\":\"\",\"lara_override\":\"\"}}}"}'}
+_header = {'authority': 'www.instagram.com',
+            'accept': '*/*',
+            'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
+            'content-type': 'application/x-www-form-urlencoded;charset=UTF-8',
+            'origin': 'https://www.instagram.com',
+            'referer': 'https://www.instagram.com/',
+            'sec-ch-prefers-color-scheme': 'dark',
+            'sec-ch-ua': '"Not-A.Brand";v="99", "Chromium";v="124"',
+            'sec-ch-ua-full-version-list': '"Not-A.Brand";v="99.0.0.0", "Chromium";v="124.0.6327.4"',
+            'sec-ch-ua-mobile': '?1',
+            'sec-ch-ua-model': '"SM-A326B"',
+            'sec-ch-ua-platform': '"Android"',
+            'sec-ch-ua-platform-version': '"13.0.0"',
+            'sec-fetch-dest': 'empty',
+            'sec-fetch-mode': 'cors',
+            'sec-fetch-site': 'same-origin',
+            'user-agent': ua}
+url = "https://www.instagram.com/async/wbloks/fetch/"
+#url = "https://www.instagram.com/async/wbloks/fetch/?appid=com.bloks.www.bloks.caa.login.async.send_login_request&type=action&__bkv=cad78e6d370a4202227690d08cec77259c81334840d3f604a81f7a24d273bb25"
